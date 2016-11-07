@@ -19,3 +19,6 @@ RUN unzip go_appengine_sdk_linux_amd64-1.9.46.zip
 RUN rm go_appengine_sdk_linux_amd64-1.9.46.zip
 
 ENV PATH=$PATH:/go_appengine/
+RUN mkdir goroot
+ENV GOROOT /goroot
+ENV GOPATH /go:/go_appengine/go_root
